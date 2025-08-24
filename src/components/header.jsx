@@ -92,8 +92,9 @@ const Header = () => {
         >
           <div className="w-full max-w-md bg-white shadow-xl py-12 p-6 relative animate-slideIn rounded-xl">
             <SignIn
-              signInFallbackRedirectUrl="/onboarding"
-              signUpFallbackRedirectUrl="/onboarding"
+              signUpForceRedirectUrl="/onboarding"
+              fallbackRedirectUrl="/onboarding"
+              afterSignInUrl="/"
               appearance={{
                 elements: {
                   card: "shadow-none",
